@@ -1,5 +1,8 @@
 // import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
+'use client';
+import { ReactFlowProvider } from "@xyflow/react";
+import "./globals.css";
+import AuthProvider from "../context/Authprovider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -20,7 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+      <ReactFlowProvider>
+      <AuthProvider>
+       {children}
+        </AuthProvider>
+        </ReactFlowProvider>
       </body>
     </html>
   );
