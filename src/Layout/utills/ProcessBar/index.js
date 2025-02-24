@@ -64,6 +64,7 @@ export default function ProcessBox({ toggleMinimap, showMinimap }) {
             height: "43px",
             background: "white",
             width: "5rem",
+            borderRadius: "5px",
           }}
         >
           <SettingsSuggestIcon />
@@ -126,6 +127,7 @@ export default function ProcessBox({ toggleMinimap, showMinimap }) {
             marginLeft: "21px",
             marginRight: "15px",
             height: "43px",
+            borderRadius: "5px",
           }}
         >
           <LocalDrinkIcon />
@@ -151,6 +153,7 @@ export default function ProcessBox({ toggleMinimap, showMinimap }) {
                 maxHeight: "43px",
                 borderColor: "#002855",
                 color: "#002855",
+                borderRadius: "5px",
               }}
               variant="outlined"
             >
@@ -163,6 +166,7 @@ export default function ProcessBox({ toggleMinimap, showMinimap }) {
                 width: "80px",
                 maxHeight: "43px",
                 background: "#002855",
+                borderRadius: "5px",
               }}
               variant="contained"
             >
